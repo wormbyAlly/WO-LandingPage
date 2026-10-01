@@ -1,0 +1,179 @@
+/* ==========================================================================
+   1. GLOBAL VARIABLES (Atur Warna Utama Website Di Sini)
+   ========================================================================== */
+   :root {
+    /* Palet Warna Utama */
+    --primary-color: #F9F6F0;      /* Soft Warm Cream (Navbar & BG Utama) */
+    --secondary-color: #E2E8E0;    /* Sage Green (Kartu & Section Soft) */
+    --accent-color: #C47B7B;       /* Dusty Rose (Tombol CTA & Highlight) */
+    --accent-hover: #A86262;       /* Dusty Rose Gelap (Efek Hover) */
+    --text-color: #333333;         /* Dark Charcoal (Warna Teks Utama) */
+    --text-muted: #666666;        /* Teks Sekunder / Deskripsi */
+    --white: #FFFFFF;
+    
+    /* Font & Transition */
+    --font-main: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --transition-smooth: all 0.3s ease-in-out;
+}
+
+/* ==========================================================================
+   2. BASE STYLES
+   ========================================================================== */
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    overflow-x: hidden;
+}
+
+/* Override Teks Muted Bootstrap */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* ==========================================================================
+   3. HEADER & NAVBAR
+   ========================================================================== */
+.custom-navbar {
+    background-color: rgba(249, 246, 240, 0.95); /* Soft Warm Cream + Transparansi */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(196, 123, 123, 0.15);
+}
+
+.brand-logo {
+    color: var(--accent-color) !important;
+}
+
+.custom-navbar .nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: var(--accent-color);
+}
+
+/* ==========================================================================
+   4. HERO SECTION (VIDEO BACKGROUND)
+   ========================================================================== */
+.hero-section {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    background-color: rgba(51, 51, 51, 0.55); /* Dark Charcoal dengan transparansi */
+    z-index: 2;
+}
+
+.hero-content {
+    z-index: 3;
+}
+
+/* ==========================================================================
+   5. BUTTONS & BADGES (Menggunakan Variable Accent/Dusty Rose)
+   ========================================================================== */
+.btn-theme {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    transition: var(--transition-smooth);
+}
+
+.btn-theme:hover {
+    background-color: var(--accent-hover);
+    color: var(--white);
+}
+
+.btn-outline-theme {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    transition: var(--transition-smooth);
+}
+
+.btn-outline-theme:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.badge-theme {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 0.5em 1em;
+}
+
+.text-theme {
+    color: var(--accent-color) !important;
+}
+
+/* ==========================================================================
+   6. SECTIONS & CARDS (Menggunakan Variable Secondary/Sage Green)
+   ========================================================================== */
+/* Background Alternatif untuk Variasi Section */
+.bg-light-custom {
+    background-color: var(--secondary-color);
+}
+
+/* Custom Card Style */
+.card-service {
+    background-color: var(--primary-color);
+    transition: var(--transition-smooth);
+}
+
+.card-service:hover {
+    transform: translateY(-5px);
+}
+
+.card-popular {
+    border: 2px solid var(--accent-color) !important;
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Custom Box Statistik */
+.border.rounded-3.bg-light-custom {
+    border-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* ==========================================================================
+   7. GALLERY & FORM
+   ========================================================================== */
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+/* Custom Form Focus */
+.form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(196, 123, 123, 0.25);
+}
+
+/* ==========================================================================
+   8. FOOTER
+   ========================================================================== */
+.footer-custom {
+    background-color: var(--primary-color);
+}

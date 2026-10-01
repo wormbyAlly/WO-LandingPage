@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyWedding - Wedding Organizer</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg rounded-pill shadow-sm px-3 mt-3 custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold brand-logo" href="#">
+                        <img src="/assets/photos/logo.png" alt="Logo" width="42" height="36" class="d-inline-block align-text-bottom me-2">
+                        HappyWedding
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#review">Review</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section position-relative d-flex justify-content-center align-items-center text-white" id="hero">
+            <video autoplay muted loop playsinline class="hero-video position-absolute top-0 start-0 w-100 h-100">
+                <source src="/assets/videos/vidio-pernikahan.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+            <div class="container position-relative text-center hero-content">
+                <h1 class="fw-bold display-4 mb-3">Istimewakan Momen Berbahagia Anda</h1>
+                <p class="lead mb-4">Pesan segera dan bahagiakan pasangan Anda hanya di HappyWedding</p>
+                <a href="#services" class="btn btn-theme btn-lg rounded-pill px-4 shadow">Lihat Paket Layanan</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-5 section-about" id="about">
+            <div class="container py-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <img src="/assets/photos/about-img.jpg" alt="Tentang HappyWedding" class="img-fluid rounded-4 shadow">
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="badge badge-theme mb-2">Tentang Kami</span>
+                        <h2 class="fw-bold section-title mb-3">Mewujudkan Pernikahan Impian Tanpa Khawatir</h2>
+                        <p class="text-muted mb-4">HappyWedding adalah penyedia jasa wedding organizer profesional yang siap mendampingi seluruh proses perencanaan acara bahagia Anda. Dari konsep awal hingga eksekusi di hari H, kami memastikan setiap detail berjalan sempurna.</p>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="p-3 border rounded-3 bg-light-custom text-center">
+                                    <h3 class="fw-bold text-theme mb-1">500+</h3>
+                                    <p class="small text-muted mb-0">Pasangan Bahagia</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border rounded-3 bg-light-custom text-center">
+                                    <h3 class="fw-bold text-theme mb-1">8+</h3>
+                                    <p class="small text-muted mb-0">Tahun Pengalaman</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-5 section-services bg-light-custom" id="services">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="badge badge-theme mb-2">Layanan Kami</span>
+                    <h2 class="fw-bold section-title">Pilihan Paket Pernikahan</h2>
+                    <p class="text-muted">Pilih paket terbaik yang sesuai dengan konsep dan kebutuhan acara Anda</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm card-service rounded-4 overflow-hidden">
+                            <div class="card-body p-4 text-center">
+                                <div class="icon-wrapper mb-3 mx-auto">
+                                    <span class="fs-1">💍</span>
+                                </div>
+                                <h4 class="fw-bold mb-3">Intimate Wedding</h4>
+                                <p class="text-muted mb-4">Cocok untuk acara keluarga hangat dengan kapasitas hingga 100 undangan.</p>
+                                <h5 class="text-theme fw-bold mb-3">Rp 25.000.000</h5>
+                                <a href="#contact" class="btn btn-outline-theme rounded-pill w-100">Pilih Paket</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow card-service card-popular rounded-4 overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-3">Terfavorit</span>
+                            <div class="card-body p-4 text-center">
+                                <div class="icon-wrapper mb-3 mx-auto">
+                                    <span class="fs-1">👑</span>
+                                </div>
+                                <h4 class="fw-bold mb-3">Grand Ballroom</h4>
+                                <p class="text-muted mb-4">Paket lengkap eksklusif untuk acara besar dengan kapasitas hingga 500 undangan.</p>
+                                <h5 class="text-theme fw-bold mb-3">Rp 65.000.000</h5>
+                                <a href="#contact" class="btn btn-theme rounded-pill w-100">Pilih Paket</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm card-service rounded-4 overflow-hidden">
+                            <div class="card-body p-4 text-center">
+                                <div class="icon-wrapper mb-3 mx-auto">
+                                    <span class="fs-1">🌿</span>
+                                </div>
+                                <h4 class="fw-bold mb-3">Outdoor Garden</h4>
+                                <p class="text-muted mb-4">Konsep pesta kebun romantis dan estetik untuk kapasitas 250 undangan.</p>
+                                <h5 class="text-theme fw-bold mb-3">Rp 45.000.000</h5>
+                                <a href="#contact" class="btn btn-outline-theme rounded-pill w-100">Pilih Paket</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="py-5 section-gallery" id="gallery">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="badge badge-theme mb-2">Galeri Foto</span>
+                    <h2 class="fw-bold section-title">Dokumentasi Momen Indah</h2>
+                    <p class="text-muted">Kumpulan kenangan dari pernikahan yang telah kami selenggarakan</p>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4 col-6">
+                        <img src="/assets/photos/foto-1.jpg" alt="Galeri 1" class="img-fluid rounded-3 shadow-sm gallery-img">
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <img src="/assets/photos/foto-2.jpg" alt="Galeri 2" class="img-fluid rounded-3 shadow-sm gallery-img">
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <img src="/assets/photos/foto-3.jpg" alt="Galeri 3" class="img-fluid rounded-3 shadow-sm gallery-img">
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <img src="assets/photos/foto-4.jpg" alt="Galeri 4" class="img-fluid rounded-3 shadow-sm gallery-img">
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <img src="assets/photos/foto-5.jpg" alt="Galeri 5" class="img-fluid rounded-3 shadow-sm gallery-img">
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <img src="assets/photos/foto-6.jpg" alt="Galeri 6" class="img-fluid rounded-3 shadow-sm gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review Section -->
+        <section class="py-5 section-review bg-light-custom" id="review">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="badge badge-theme mb-2">Ulasan Klien</span>
+                    <h2 class="fw-bold section-title">Apa Kata Mereka?</h2>
+                    <p class="text-muted">Testimoni dari pasangan pengantin yang mempercayakan harinya kepada kami</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                            <div class="card-body">
+                                <p class="card-text text-muted">"Tim HappyWedding sangat tanggap dan membantu dari awal persiapan. Dekorasi dan rundown acara berjalan sangat mulus!"</p>
+                                <hr class="my-3 border-secondary-subtle">
+                                <h6 class="fw-bold mb-0">Rian & Maya</h6>
+                                <small class="text-muted">Pernikahan Juni 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                            <div class="card-body">
+                                <p class="card-text text-muted">"Luar biasa! Konsep outdoor impian kami diwujudkan dengan sangat cantik melebihi ekspektasi. Terima kasih HappyWedding!"</p>
+                                <hr class="my-3 border-secondary-subtle">
+                                <h6 class="fw-bold mb-0">Dito & Sarah</h6>
+                                <small class="text-muted">Pernikahan September 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                            <div class="card-body">
+                                <p class="card-text text-muted">"Pelayanan ramah, vendor katering dan fotografer yang direkomendasikan semuanya top. Pokoknya puas banget!"</p>
+                                <hr class="my-3 border-secondary-subtle">
+                                <h6 class="fw-bold mb-0">Fikri & Anisa</h6>
+                                <small class="text-muted">Pernikahan Januari 2026</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-5 section-contact" id="contact">
+            <div class="container py-4">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <span class="badge badge-theme mb-2">Kontak Kami</span>
+                        <h2 class="fw-bold section-title mb-3">Konsultasikan Pernikahan Anda</h2>
+                        <p class="text-muted mb-4">Hubungi tim kami untuk mendiskusikan konsep, tanggal, dan anggaran pernikahan yang Anda inginkan.</p>
+                        <div class="mb-3">
+                            <h6 class="fw-bold mb-1">Alamat Kantor:</h6>
+                            <p class="text-muted mb-0">Jl. Bunga Melati No. 45, Jakarta Selatan</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="fw-bold mb-1">WhatsApp / Telepon:</h6>
+                            <p class="text-muted mb-0">+62 812-3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card border-0 shadow rounded-4 p-4">
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <!-- Ganti value di bawah ini dengan Access Key resmi kamu dari email -->
+                                <input type="hidden" name="access_key" value="8f3d1b2a-4c5e-6f7a-8b9c-0d1e2f3a4b5c">
+                                
+                                <input type="hidden" name="subject" value="Konsultasi Pernikahan Baru - HappyWedding">
+                            
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Nama Lengkap</label>
+                                        <input type="text" name="Nama_Lengkap" class="form-control rounded-3" placeholder="Nama Anda" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Nomor WhatsApp</label>
+                                        <input type="tel" name="Nomor_WhatsApp" class="form-control rounded-3" placeholder="0812..." required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Rencana Tanggal Acara</label>
+                                        <input type="date" name="Tanggal_Acara" class="form-control rounded-3" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Pesan / Konsep Impian</label>
+                                        <textarea name="Pesan_Konsep" class="form-control rounded-3" rows="4" placeholder="Ceritakan konsep pernikahan yang Anda bayangkan..." required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-theme rounded-pill w-100 py-2">Kirim Pesan Konsultasi</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom py-4 text-center text-muted border-top">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 HappyWedding. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
